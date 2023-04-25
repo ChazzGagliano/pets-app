@@ -1,0 +1,20 @@
+edit page
+
+<h1>Edit photo</h1>
+<%= form_with model: @pet do |form| %>
+  <div>
+    <%= form.label :age %>
+    <%= form.text_field :age %>
+  </div>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :species %>
+    <%= form.text_field :species %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end%>
